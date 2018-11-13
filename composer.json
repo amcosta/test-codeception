@@ -1,0 +1,16 @@
+{
+    "name": "amcosta/test-codeception",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Alex Moreno",
+            "email": "alex.moreno.costa@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.5"
+    }
+}
