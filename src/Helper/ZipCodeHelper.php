@@ -9,9 +9,12 @@ class ZipCodeHelper
         return preg_replace('/[^0-9]/', '', $zipCode);
     }
 
-    static public function validate(string $zipCode): bool
+    static public function validate(string $zipCode, $sanitize = false): bool
     {
-        $value = self::sanitize($zipCode);
-        return preg_match('/\d{8}/', $value);
+        if ($sanitize) {
+            $zipCode = self::sanitize($zipCode);
+        }
+
+        return preg_match('/\d{8}/', $zipCode);
     }
 }
